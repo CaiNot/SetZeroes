@@ -52,6 +52,9 @@ public:
                 if (matrix[j][i] == 0) {
                     ifCurrentRowContain0 = true;
                     matrix[0][i] = 0;
+                    /**
+                    * 把中间的零映射到边缘位置
+                    */
                 }
             }
             if (ifCurrentRowContain0) {
